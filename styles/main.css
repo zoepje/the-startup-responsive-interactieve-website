@@ -136,6 +136,10 @@ main{
   }
 }
 
+main img{
+  width:90vw;
+}
+
 /* div met linkjes erin */
 .buttons {
   & .button{
@@ -180,17 +184,55 @@ dfn{
   font-style: normal;
   font-size: 1.5rem;
 }
+
+.subtext{
+  font-size: 16px;
+  line-height: 26px;
+  margin: 8px 0 0;
+  padding-bottom: 24px;
+  color: var(--grey70);
+  border-bottom: 1px solid hsla(53, 7%, 76%, 0.502);
+}
+
 /* #endregion Dictionary */
+
+/* #region Steps */
 .steps ul{
   list-style: none;
+  /* scroll list/carousel */
 }
+/* #endregion Steps */
 
+/* #reginon Cases */
 .cases ul{
   list-style: none;
+  /* scroll list/carousel */
 }
 
-
-main img{
-  width:90vw;
+.cases .primary-button{
+  margin-bottom: 20px;
 }
+/* #endregion Cases */
+
+/* #region Contact */
+#contact span{
+  display: block;
+  padding: 0.2rem 0;
+
+  & a{
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--grey99);
+  }
+}
+
+#contact img{
+  display: none;
+}
+/* planner/calender */
+
+/* #endregion Contact */
+
+
 /* #endregion Main */
