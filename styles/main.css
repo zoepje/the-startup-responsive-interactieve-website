@@ -111,6 +111,10 @@ main{
   margin-top: 100px;
 }
 
+.subtitle{
+  color: var(--grey70);
+}
+
 section{
   margin: 1rem;
 }
