@@ -42,15 +42,24 @@
   --grey50: #c6c5bd;
   --grey20: #eaeae6;
   --background-grey: #f6f6f4;
+  --white: #fff;
   --accent-red: #ff6b6b;
+
+  /* margin */
+  --margin-text: .5em 0;
 }
 
 body{
-  background-color: #fff;
+  background-color: var(--white);
   font-family: var(--primary-font);
   color: var(--grey99);
 }
 
+.subtitle{
+  display: block;
+  color: var(--grey70);
+  padding: 1rem 0;
+}
 
 /* #region Header */
 .topbar{
@@ -63,7 +72,7 @@ body{
   justify-content: space-between;
   padding: 0 24px;
   height: 56px;
-  background-color: #fff;
+  background-color: var(--white);
   
   & a.logo img{
     height: 20px;
@@ -104,17 +113,74 @@ button.menu{
 
 /* #region Main */
 main{
-  margin-top: 100px;
+  margin-top: 60px;
+
+  & section{
+    margin: 1rem;
+  }
+  & .paragrafe-section{
+    margin-top: 80px;
+  }
+
+  & h1{
+    font-size: 2.5rem;
+    margin: var(--margin-text);
+  }
+
+  & h2, h3, h4, p{
+    margin: var(--margin-text);
+  }
+  
+  & section article p{
+    font-size: 1.2rem;
+  }
 }
 
-.subtitle{
-  color: var(--grey70);
+/* div met linkjes erin */
+.buttons {
+  & .button{
+    margin-bottom: 40px;
+  }
+
+  & .primary-button{
+    margin-right: 40px;
+  }
 }
 
-section{
-  margin: 1rem;
+.primary-button{
+  display: inline-flex;
+  padding: 12px 32px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--accent-red);
+  color: var(--white);
 }
 
+.link{
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--accent-red);
+  /* span voor het pijltje */
+}
+
+
+/* #region Dictionary */
+.dictionary-quote{
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--grey99);
+  color: var(--white);
+
+}
+
+dfn{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+/* #endregion Dictionary */
 .steps ul{
   list-style: none;
 }
