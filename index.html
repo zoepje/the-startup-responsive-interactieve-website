@@ -8,23 +8,27 @@
 
 <body>
 	<header>
-		<nav>
+		<nav class="topbar">
 			<a class="logo" href="https://lifely.nl/en/">
 				<img src="/Assets/Logo/Dark/Logo_dark-small.png" alt="Lifely logo">
 			</a>
 
 			<p class="breadcrums">home</p>
 
-			<a class="call-us" href="tel:0208461905">
+			<a class="call-us" href="tel: 0208461905">
 				<span class="label">Call us</span>
 				020 846 19 05
-			</a>
+			</a> <!-- hide for mobile -->
 
-			<a class="contact-button" href="https://lifely.nl/en/contact/" target="">Contact</a>
+			<a class="contact-button" href="https://lifely.nl/en/contact/">Contact</a>
 			<button class="menu" type="button">
 				<span class="text">menu</span>
 				<!-- hamburger menu icon -->
 			</button>
+		</nav>
+
+		<nav class="primary-nav">
+			<!-- Menu dat openklapt en het hele scherm opneemt -->
 		</nav>
 	</header>
 
@@ -42,7 +46,7 @@
 				</p>
 				<div class="buttons">
 					<a class="primary-button" href="#contact">Schedule a free AI consutation</a>
-					<a class="link" href="">Discover Lifely's AI services 
+					<a class="link" href="https://lifely.nl/en/services/artificial-intelligence/">Discover Lifely's AI services 
 						<span>-><!-- arrow icon --></span>
 					</a>
 				</div>
@@ -51,7 +55,8 @@
 
 		<section class="Dictionary-quote">
 			<h2>AI Design Sprint</h2>
-			<legend>/eɪ-aɪ dɪˈzaɪn sprɪnt/</legend>
+			<!-- dfn can also be used probably more fun/accurate -->
+			<p class="subtext">/eɪ-aɪ dɪˈzaɪn sprɪnt/</p>
 			<p>An AI Design Sprint is a time-constrained process executed by an interdisciplinary 
 				team. The process focuses on proving the practical applicability of artificial 
 				intelligence models within an organisation. The result is a prototype that automates 
@@ -61,14 +66,13 @@
 		</section>
 
 		<section class="steps">
-			<h2>Steps</h2>
-			<p>What are the steps of the AI Design Sprint?</p>
+			<h2>What are the steps of the AI Design Sprint?</h2>
 			
 			<ul>
 				<li>
 					<img src="Assets/Illustraties/lifely-concept-transparant-2000x2000.png" alt="">
 					<h3>Step 1: We research your process</h3>
-					<p class="subtitle">Context is key.</p>
+					<h4>Context is key.</h4>
 					<p class="description">We bring together your team to get your current process 
 						on paper. When we know the goals and output of your process we can effectively 
 						validate if we have successfully supported or replaced parts with AI solutions.
@@ -77,7 +81,7 @@
 				<li>
 					<img src="Assets/Illustraties/lifely-delivery-transparant-2000x2000.png" alt="">
 					<h3>Step 2: We give you the knowledge to become future-proof </h3>
-					<p class="subtitle">Setting the stage.</p>
+					<h4>Setting the stage.</h4>
 					<p class="description">We invite experts to educate your team on what AI is, 
 						what its use cases are, how it will develop in the future, and how it will 
 						affect your industry and business.
@@ -86,7 +90,7 @@
 				<li>
 					<img src="Assets/Illustraties/lifely-innovatie-transparant-2000x2000.png" alt="">
 					<h3>Step 3: We zoom in on what's important</h3>
-					<p class="subtitle">Getting to the core.</p>
+					<h4>Getting to the core.</h4>
 					<p class="description">To make sure we have a solid prototype, we have to create 
 						focus. With your team, we decide which parts of your process will have the 
 						biggest impact on efficiency and on cost savings.
@@ -95,7 +99,7 @@
 				<li>
 					<img src="Assets/Illustraties/lifely-legacy-transparant-2000x2000.png" alt="">
 					<h3>Step 4: We create a prototype</h3>
-					<p class="subtitle">Augmenting your process.</p>
+					<h4>Augmenting your process.</h4>
 					<p class="description">Good preparation results in good execution. With the insights 
 						of all the previous steps, we leverage AI models and create a prototype that 
 						automates or enhances parts of your business processes.
@@ -104,7 +108,7 @@
 				<li>
 					<img src="Assets/Illustraties/lifely-model-illustratie-transparent-4500x6000.png" alt="">
 					<h3>Step 5: And we make sure it works </h3>
-					<p class="subtitle">Solve for good.</p>
+					<h4>Solve for good.</h4>
 					<p class="description">We bring back your team to test the prototype and see if 
 						it's helpful and practical in real-world scenarios. In the end, you'll receive 
 						the actual prototype (be it an API or script), and advice on whether or not your 
@@ -113,6 +117,149 @@
 				</li>
 			</ul>
 		</section>
+
+		<section class="cases">
+			<h2>We've done this before</h2>
+			<ul>
+				<li>
+					<img src="Assets/Foto_s/Case studies/Ruler.jpg" alt="">
+					<h3>Ruler AI case study</h3>
+					<p>Allowing law experts to focus on their expertise.</p>
+					<a class="primary-button" href="https://lifely.nl/en/cases/ruler-ai/">Learn more about the Ruler AI case</a>
+				</li>
+				<li>
+					<img src="Assets/Foto_s/Case studies/TopTaal.jpeg" alt="">
+					<h3>TopTaal case study</h3>
+					<p>Predicting chances of success.</p>
+					<a class="primary-button" href="https://lifely.nl/en/cases/toptaal/">Learn more about the TopTaal case</a>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact">
+			<h2>Not sure yet? Let's discuss.</h2>
+			<span>Call us <a href="tel: 0208461905">020 846 19 05</a></span>
+			<span>Mail our expert <a href="mailto: martijn@lifely.nl">martijn@lifely.nl</a></span>
+
+			<p>Let's explore your goals, and figure out if we can help you achieve them.</p>
+
+			<!-- appointment planner/ callender or something like that -->
+
+			<img src="Assets/Foto_s/Studio/_DSF8997.jpg" alt=""><!-- hide for mobile -->
+		</section>
+
+		<section class="related">
+			<section class="readmore">
+				<span class="subtitle">Read more about AI</span>
+				<ul>
+					<li>
+						<a href="https://lifely.nl/en/solutions/robotic-process-automation-rpa/">Robotic Process Automation
+							<span class="read-more">Read more</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/services/artificial-intelligence/ai-driven-digital-transformation/">AI-driven Digital Transformation
+							<span class="read-more">Read more</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="solutions">
+				<span class="subtitle">How we can help</span>
+				<h2>Solutions we help you build.</h2>
+				<a class="secondary-button" href="https://lifely.nl/en/solutions/">
+					Go to solutions
+				</a>
+			</section>
+		</section>
 	</main>
+
+	<footer>
+		<section class="footer-navigation">
+			<div class="menu">
+				<img class="menu-title" src="Assets/Logo/Inverted/Logo_inverted@1x.png" alt="lifely logo">
+				<ul class="footer-general-menu">
+					<li>
+						<a href="https://lifely.nl/en/cases/">Work</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/culture/">Culture</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/people/">People</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/knowledge/">Knowledge</a>
+					</li>
+					<li>
+						<a href="http://jobs.lifely.nl/">Jobs</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/contact/">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu">
+				<span class="menu-title">Services</span>
+				<ul class="footer-services-menu">
+					<li>
+						<a href="https://lifely.nl/en/services/agile-product-teams/">Agile Product Teams</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/services/artificial-intelligence/">Artificial Intelligence</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/services/strategic-development/">Strategic Development</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menu">
+				<span class="menu-title">Solutions</span>
+				<ul class="footer-solutions-menu">
+					<li>
+						<a href="https://lifely.nl/en/solutions/software-as-a-service/">Software as a Service</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/cross-platform-mobile-web-and-desktop-apps/">Cross-Platform Apps</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/software-rebuild/">Software Rebuild</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/common-ground/">Common Ground Software</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/getting-started-with-artificial-intelligence/">Getting started with AI</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/robotic-process-automation-rpa/">Robotic Process Automation</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/google-design-sprint/">Google Design Sprint</a>
+					</li>
+					<li>
+						<a href="https://lifely.nl/en/solutions/ai-in-production-mlops/">AI in production</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="footer-tagline">
+			<h2>Solve for good.</h2>
+			<span class="subtitle">Innovation that is long-lasting and worthwhile.</span>
+			<p>[solve] We are warm hearted problem solvers.
+				[for good] We're here to help until you can help yourself.
+				[good] The company we keep, and the code we operate by, are good.
+			</p>
+		</section>
+		
+		<section class="footer-credentials">
+			<p>Lifely Studio, Prinsengacht 197D Amsterdam</p>
+			<p>Visit us from 09:00 till 17:00, or call us at <a href="tel: 0208461905">020 846 19 05</a></p>
+			<a class="legal-link" href="https://lifely.nl/en/privacy-policy/">Privacy &amp; cookies</a>
+		</section>
+	</footer>
 </body>
 </html>
