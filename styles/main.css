@@ -32,9 +32,6 @@
 }
 /* #endregion Fonts */
 
-
-
-
 :root{
   /* Font */
   --primary-font: "AktivGrotesk", sans-serif;
@@ -103,7 +100,6 @@ button.menu{
   display: none;
 }
 /* #endregion Hamburgermenu */
-
 /* #endregion Header */
 
 /* #region Main */
