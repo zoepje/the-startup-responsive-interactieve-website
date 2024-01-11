@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* #region Fonts */
+@font-face {
+  font-family: "AktivGrotesk";
+  src: url(/Assets/Font/AktivGrotesk_Lt.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "AktivGrotesk";
+  src: url(/Assets/Font/AktivGrotesk_Rg.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AktivGrotesk";
+  src: url(/Assets/Font/AktivGrotesk_Md.ttf);
+  font-weight: 550;
+}
+
+@font-face {
+  font-family: "AktivGrotesk";
+  src: url(/Assets/Font/AktivGrotesk_Bd.ttf);
+  font-weight: bold;
+}
+/* #endregion Fonts */
+
+
+
+
+:root{
+  /* Font */
+  --primary-font: "AktivGrotesk", sans-serif;
+
+  /* Colors */
+  --grey99: #3c3b34;
+  --grey70: #9b9a92;
+  --grey50: #c6c5bd;
+  --grey20: #eaeae6;
+  --background-grey: #f6f6f4;
+  --accent-red: #ff6b6b;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: var(--primary-font);
+  color: var(--grey99);
+}
+
+/* #region Header */
+.topbar{
+  display: flex;
+
+  & a.call-us{
+    display: none;
+  }
+}
+/* #region Hamburgermenu */
+.primary-nav{
+  display: none;
+}
+/* #endregion Hamburgermenu */
+
+/* #endregion Header */
