@@ -136,13 +136,73 @@ header{
     transition-duration: .3s;
     transition-timing-function: ease-out;
     transition-property: top, opacity;
+
+    & .services-nav-menu, .olutions-nav-menu, .about-nav-menu{
+      display: flex;
+      flex-direction: column;
+    }
+
+    & section{  
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      margin-bottom: 40px;
+
+      & .title{
+        position: relative;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      & .about-nav-title{
+        font-weight: bold;
+        color: var(--grey70);
+      }
+
+      & ul{
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style: none;
+
+        & li ul{
+          margin-left: 1rem;
+        }
+      }
+  
+      & ul li a{
+        position: relative;
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration: none;
+        color: var(--grey70);
+      }
+  
+      & .sub-menu li a{
+        color: var(--white);
+      }
+    }
+
+    .about-nav-menu ul li a{
+      color: var(--white);
+    }
+
+    .nav-bottom{
+      display: flex;
+
+      & a{
+        color: var(--grey70);
+        text-decoration: none;
+        margin-right: 24px;
+      }
+    }
   }
 
-  & .primary-nav section{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+
+
   /* #endregion Hamburgermenu */
 } 
 
