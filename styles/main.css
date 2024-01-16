@@ -132,14 +132,15 @@ header{
     padding-top: 140px;
     background-color: var(--grey99);
     opacity: 0;
-    overflow: scroll;
+    overflow: scroll; /*zorgt ervoor dat je in het menu kan scrollen*/
     transition-duration: .3s;
     transition-timing-function: ease-out;
     transition-property: top, opacity;
 
-    & .services-nav-menu, .olutions-nav-menu, .about-nav-menu{
+    & .nav-main-section{
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     & section{  
@@ -148,7 +149,6 @@ header{
       margin-bottom: 40px;
 
       & .title{
-        position: relative;
         font-size: 2rem;
         font-weight: bold;
         color: var(--white);
@@ -174,7 +174,6 @@ header{
       }
   
       & ul li a{
-        position: relative;
         font-size: 16px;
         line-height: 26px;
         text-decoration: none;
@@ -190,8 +189,8 @@ header{
       color: var(--white);
     }
 
-    .nav-bottom{
-      display: flex;
+    .nav-bottom-section{
+      margin-top: auto;
 
       & a{
         color: var(--grey70);
