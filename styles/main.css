@@ -133,7 +133,7 @@ header{
     background-color: var(--grey99);
     opacity: 0;
     overflow: scroll; /*zorgt ervoor dat je in het menu kan scrollen*/
-    transition-duration: .3s;
+    transition-duration: .5s;
     transition-timing-function: ease-out;
     transition-property: top, opacity;
 
@@ -220,7 +220,7 @@ header.nav-open {
 
   & .topbar-nav, & .primary-nav{
     opacity: 1;
-    transition-duration: .3s;
+    transition-duration: .5s;
     transition-timing-function: ease-out;
   }
 
