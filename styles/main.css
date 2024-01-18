@@ -49,7 +49,7 @@
   --margin-text: .5rem 0;
   --margin-sides: 0 .5rem;
   --padding-footer-text: 0 1rem 1.5rem;
-  --padding-big-screen: 0 4.5rem;
+  --padding-big-screen: 0 9rem;
 }
 
 body{
@@ -239,6 +239,8 @@ header.nav-open {
 }
 /* #endregion Header */
 
+
+
 /* #region Main */
 main{
   margin-top: 60px;
@@ -348,6 +350,7 @@ dfn{
     /* background-color: #f6f6f4; */
     display: inline-block;
     white-space: normal;
+    margin: var(--margin-sides);
   }
 
   & img{
@@ -454,6 +457,8 @@ dfn{
 /* #endregion Related */
 /* #endregion Main */
 
+
+
 /* #region Footer */
 footer{
   margin-top: auto;
@@ -546,8 +551,9 @@ footer{
   }
 }
 /* #endregion Credentials */
-
 /* #endregion Footer */
+
+
 
 /* #region Mediaqueries */
 @media only screen and (min-width: 40em) {
@@ -645,7 +651,7 @@ footer{
       & .nav-main-section{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        margin: 0 auto;
       }
     }
   }
@@ -685,7 +691,7 @@ footer{
 
   .read{
     width: 60%;
-    padding-left: 4.5rem;
+    padding-left: 9rem;
 
     & ul{
       flex-direction: row;
@@ -699,14 +705,14 @@ footer{
 
   .solutions{
     width: 40%;
-    padding-right: 4.5rem;
+    padding-right: 9rem;
   }
   /* #endregion Main */ 
 
   /* #region Footer */
   .footer-navigation, .footer-tagline, .footer-credentials{
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .footer-navigation{
