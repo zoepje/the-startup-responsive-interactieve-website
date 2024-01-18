@@ -49,6 +49,7 @@
   --margin-text: .5rem 0;
   --margin-sides: 0 .5rem;
   --padding-footer-text: 0 1rem 1.5rem;
+  --padding-big-screen: 0 4.5rem;
 }
 
 body{
@@ -354,7 +355,7 @@ dfn{
 /* #endregion Caroucel */
 
 /* #region Contact */
-#contact span{
+.contact span{
   display: block;
   padding: 0.2rem 0;
 
@@ -366,7 +367,7 @@ dfn{
   }
 }
 
-#contact img{
+.contact img{
   display: none;
 }
 /* #endregion Contact */
@@ -383,7 +384,7 @@ dfn{
 
 /* #region Read more */
 .read{
-  padding: 1rem 1.5rem;
+  padding: 40px 1.5rem;
   background-color: var(--background-grey);
   width: 100%;
 
@@ -415,7 +416,7 @@ dfn{
 
 /* #region Solutions */
 .solutions{
-  padding: 1rem 1.5rem;
+  padding: 40px 1.5rem;
   background-color: var(--accent-red);
   color: var(--white);
   width: 100%;
@@ -459,7 +460,7 @@ footer{
   flex-flow: row wrap;
 
   & .menu{
-    width: calc(100% - 1rem);
+    width: 100%;
     padding-top: 2rem;
   }
 
@@ -600,7 +601,7 @@ footer{
   /* #region Footer */
   .footer-navigation{
     & .menu.columns-1{
-      width: calc(50% - 1rem);
+      width: 50%;
     }
 
     & .footer-solutions-menu{
@@ -634,7 +635,7 @@ footer{
     margin-left: calc(20% + 0.5rem);
   }
 
-  #contact {
+  .contact {
     display: flex;
     
     & img{
@@ -653,8 +654,13 @@ footer{
 
 @media only screen and (min-width: 64em){
   /* #region Main*/
+  .header-section, .steps, .cases, .contact{
+    padding: var(--padding-big-screen);
+  }
+
   .read{
     width: 60%;
+    padding-left: 4.5rem;
 
     & ul{
       flex-direction: row;
@@ -668,18 +674,23 @@ footer{
 
   .solutions{
     width: 40%;
+    padding-right: 4.5rem;
   }
-
   /* #endregion Main */ 
 
   /* #region Footer */
+  .footer-navigation, .footer-tagline, .footer-credentials{
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
   .footer-navigation{
     & .menu.columns-1{
-      width: calc(25% - 1rem);
+      width: 25%;
     }
 
     & .menu.columns-2{
-      width: calc(50% - 1rem);
+      width: 50%;
     }
   }
 
