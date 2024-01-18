@@ -46,14 +46,21 @@
   --background-footer:#33322c;
 
   /* margin */
-  --margin-text: .5em 0;
-  --padding-footer-text: 1rem 1.5rem;
+  --margin-text: .5rem 0;
+  --margin-sides: 0 .5rem;
+  --padding-footer-text: 0 1rem 1.5rem;
 }
 
 body{
   background-color: var(--white);
   font-family: var(--primary-font);
   color: var(--grey99);
+
+
+  & p{
+    max-width: 30em;
+    line-height: 1.5em;
+  }
 }
 
 .subtitle{
@@ -241,16 +248,16 @@ main{
   & section{
     margin: 1rem;
   }
+
   & .paragrafe-section{
     margin-top: 80px;
   }
 
   & h1{
     font-size: 2.5rem;
-    margin: var(--margin-text);
   }
 
-  & h2, h3, h4, p{
+  & h1, h2, h3, h4, p{
     margin: var(--margin-text);
   }
   
@@ -260,13 +267,17 @@ main{
 }
 
 main img{
-  width:90vw;
+  width: 90vw;
 }
 
 /* div met linkjes erin */
 .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   & .button{
-    margin-bottom: 40px;
+    margin-top: 20px;
   }
 
   & .primary-button{
@@ -319,7 +330,7 @@ dfn{
 
 /* #endregion Dictionary */
 
-/* #region Steps */
+/* #region Caroucel */
 .caroucel{
   overflow: auto; /*Zorgt ervoor dat de lijst scrolled*/
   white-space: nowrap; /*Zorgt ervoor dat de lijst op een lijn blijft staan*/
@@ -354,11 +365,7 @@ dfn{
   margin-bottom: 20px;
 }
 /* #endregion Cases */
-/* #endregion Steps */
-
-
-
-
+/* #endregion Caroucel */
 
 /* #region Contact */
 #contact span{
@@ -453,16 +460,23 @@ footer{
   position: relative;
   background-color: var(--background-footer);
   color: var(--white);
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 72px 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+
+  & .menu{
+    width: calc(100% - 1rem);
+    padding-top: 2rem;
+  }
 
   & .menu-title{
     font-weight: bold;
-    padding: var(--padding-footer-text);
+    padding: 0 1rem;
   }
 
   & .menu img{
-    height: 55px;
+    height: 24px;
+    padding: 0 1rem;
   }
 
   & ul{
@@ -471,6 +485,7 @@ footer{
 
     & li{
       padding: 8px 0;
+      display: flex;
     }
   }
 
@@ -482,10 +497,6 @@ footer{
   & .footer-general-menu{
     padding-top:0;
   }
-}
-
-div.menu{
-  padding-top: 2rem;
 }
 /* #endregion Navigation */
 
@@ -513,9 +524,11 @@ div.menu{
 
 /* #region Credentials */
 .footer-credentials{
-  padding:var(--padding-footer-text);
+  padding: 1.5rem;
   background-color: var(--background-footer);
-  color:var(--white);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 34px;
 
@@ -532,3 +545,78 @@ div.menu{
 
 /* #endregion Footer */
 
+/* #region Mediaqueries */
+@media only screen and (min-width: 40em) {
+  /* #region Header */
+  header{
+    & .call-us{
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      color: var(--grey99);
+    }
+    & .label{
+      font-weight: 400;
+      margin-right: 8px;
+      color: var(--grey70);
+    }
+  }
+  /* #endregion Header */
+
+  /* #region Main */
+  main{
+    & .header-section{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      & .subtitle{
+        width: calc(100% - 1rem);
+        margin: var(--margin-sides);
+      }
+
+      & article{
+        width: calc(60% - 1rem);
+        margin: var(--margin-sides);
+        margin-top: 40px;
+        order: 1;
+      }
+
+      & img{
+        width: calc(40% - 1rem);
+        height: 400px;
+        margin: var(--margin-sides);
+        margin-top: 40px;
+        object-fit: cover;
+        overflow: hidden;
+        order:2;
+      }
+    }
+
+    & h1{
+      margin: 0;
+    }  
+  }
+  /* #endregion Main */
+
+  /* #region Footer */
+  .footer-navigation{
+    & .menu.columns-1{
+      width: calc(50% - 1rem);
+    }
+
+    & .footer-solutions-menu{
+      column-count: 2;
+    }
+  }
+
+  .footer-tagline{
+    & p{
+      margin-left: calc(30% + 0.5rem);
+    }
+
+  }
+  /* #endregion Footer */
+}
+/* #endregion Mediaqueries */
