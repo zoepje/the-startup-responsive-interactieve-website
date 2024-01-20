@@ -107,6 +107,16 @@ header{
   & .call-us{
     display: none;
     margin-right: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--grey99);
+  }
+
+  & .label{
+    font-weight: 400;
+    margin-right: 8px;
+    color: var(--grey70);
   }
 
   & .contact-link{
@@ -561,16 +571,6 @@ footer{
   header{
     & .call-us{
       display: block;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      color: var(--grey99);
-    }
-
-    & .label{
-      font-weight: 400;
-      margin-right: 8px;
-      color: var(--grey70);
     }
 
     & .topbar{
@@ -594,7 +594,7 @@ footer{
       justify-content: space-between;
 
       & .subtitle{
-        width: calc(100% - 1rem);
+        width: 100%;
         margin: var(--margin-sides);
       }
 
@@ -638,7 +638,7 @@ footer{
 
   .footer-tagline{
     & p{
-      margin-left: calc(30% + 0.5rem);
+      margin-left: 40%;
     }
   }
   /* #endregion Footer */
@@ -659,7 +659,7 @@ footer{
   
   /* #region Main */
   .dictionary-quote article{
-    margin-left: calc(20% + 0.5rem);
+    margin-left: 20%;
   }
 
   .contact {
