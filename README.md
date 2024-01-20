@@ -2,7 +2,7 @@
 
 # Lifely
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Dit is een webpagina van Lifely over "Getting started with Artificial Intelegence" waarin klanten kunnen lezen wat AI design sprint is.
+Dit is een responsive webpagina van Lifely over "Getting started with Artificial Intelegence" waarin klanten kunnen lezen wat AI design sprint is.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
