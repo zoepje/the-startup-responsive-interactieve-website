@@ -1,6 +1,6 @@
-const header = document.querySelector("header");
-const menubtn = document.querySelector(".menu-button");
-const menubtnclose = document.querySelector(".close");
+const header = document.querySelector("header"),
+      menubtn = document.querySelector(".menu-button"),
+      menubtnclose = document.querySelector(".close");
 
 // Functie uitklappen menu
 function toggleMenu(){
