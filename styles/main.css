@@ -164,7 +164,7 @@ header{
     transition-timing-function: ease-out;
     transition-property: top, opacity;
 
-    & section{  
+    & div{  
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 40px;
@@ -255,12 +255,13 @@ header.nav-open {
 main{
   margin-top: 60px;
 
-  & section{
+  & section, div.contact{
     margin: 1rem;
   }
 
   & .paragraph-section{
     margin-top: 80px;
+    
   }
 
   & .head-title{
@@ -322,7 +323,7 @@ main img{
   color: var(--white);
 }
 
-dfn{
+.dfn{
   font-family: 'Times New Roman', Times, serif;
   font-style: normal;
   font-size: 1.5rem;
@@ -409,6 +410,10 @@ dfn{
   padding: 40px 1.5rem;
   background-color: var(--background-grey);
   width: 100%;
+
+  & h2{
+    margin: 0;
+  }
 
   & ul{
     display: flex;
