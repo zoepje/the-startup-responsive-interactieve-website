@@ -52,6 +52,10 @@
   --padding-big-screen: 0 9rem;
 }
 
+html {
+  scroll-padding-top: 100px; /* Zorgt ervoor dat de topbar niet over de section is waneer je klikt om naar een section te gaan */
+}
+
 body{
   background-color: var(--white);
   font-family: var(--primary-font);
