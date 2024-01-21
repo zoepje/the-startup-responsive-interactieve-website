@@ -259,7 +259,7 @@ main{
     margin: 1rem;
   }
 
-  & .paragrafe-section{
+  & .paragraph-section{
     margin-top: 80px;
   }
 
@@ -338,8 +338,8 @@ dfn{
 }
 /* #endregion Dictionary */
 
-/* #region Caroucel */
-.caroucel{
+/* #region Carousel */
+.carousel{
   overflow: auto; /*Zorgt ervoor dat de lijst scrolled*/
   white-space: nowrap; /*Zorgt ervoor dat de lijst op een lijn blijft staan*/
   list-style: none;
@@ -374,7 +374,7 @@ dfn{
   margin-bottom: 20px;
 }
 /* #endregion Cases */
-/* #endregion Caroucel */
+/* #endregion Carousel */
 
 /* #region Contact */
 .contact span{
