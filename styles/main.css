@@ -48,6 +48,7 @@
   /* margin */
   --margin-text: .5rem 0;
   --margin-sides: 0 .5rem;
+  --margin-center: 0 auto;
   --padding-footer-text: 0 1rem 1.5rem;
   --padding-big-screen: 0 9rem;
 }
@@ -60,7 +61,6 @@ body{
   background-color: var(--white);
   font-family: var(--primary-font);
   color: var(--grey99);
-
 
   & p{
     max-width: 30em;
@@ -260,12 +260,12 @@ main{
   margin-top: 60px;
 
   & section, div.contact{
-    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 
   & .paragraph-section{
     margin-top: 80px;
-    
   }
 
   & .head-title{
@@ -321,7 +321,6 @@ main img{
 
 /* #region Dictionary */
 .dictionary-quote{
-  margin: 0;
   padding: 1rem 1.5rem;
   background-color: var(--grey99);
   color: var(--white);
@@ -392,6 +391,11 @@ main img{
     font-weight: bold;
     color: var(--grey99);
   }
+}
+
+div.calendly-inline-widget{
+  width: 350px;
+  margin: var(--margin-center);
 }
 
 .contact img{
@@ -660,7 +664,7 @@ footer{
       & .nav-main-section{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: var(--margin-center);
       }
     }
   }
@@ -678,6 +682,8 @@ footer{
       display: block;
       width: calc(40% - 1rem);
       object-fit: cover;
+      object-position: right;
+      max-height: 500px;
       margin: var(--margin-sides);
     }
 
