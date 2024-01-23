@@ -361,7 +361,6 @@ main img{
 	scroll-padding: 1rem; */
 
   & li{
-    /* background-color: #f6f6f4; */
     display: inline-block;
     white-space: normal;
     margin: var(--margin-sides);
@@ -639,6 +638,20 @@ footer{
     }  
   }
 
+  .steps{
+    & .carousel{
+      & li div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      & img{
+        order: 2;
+      }
+    }
+  }
+
   .read, .solutions{
     width: 50%;
   }
@@ -681,6 +694,15 @@ footer{
     margin-left: 20%;
   }
 
+  .steps{
+    .carousel{
+      & img{
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
   .contact {
     display: flex;
     
@@ -708,6 +730,15 @@ footer{
 
   .dictionary-quote article{
     padding: var(--padding-big-screen);
+  }
+
+  .steps{
+    .carousel{
+      & img{
+        width: 500px;
+        height: 500px;
+      }
+    }
   }
 
   .read{
