@@ -363,7 +363,7 @@ main img{
   & li{
     display: inline-block;
     white-space: normal;
-    margin: var(--margin-sides);
+    margin-right: 3.5rem;
   }
 
   & img{
@@ -732,15 +732,6 @@ footer{
     padding: var(--padding-big-screen);
   }
 
-  .steps{
-    .carousel{
-      & img{
-        width: 500px;
-        height: 500px;
-      }
-    }
-  }
-
   .read{
     width: 60%;
     padding-left: 9rem;
@@ -785,5 +776,16 @@ footer{
     }
   }
   /* #endregion Footer */ 
+}
+
+@media only screen and (min-width: 72em){
+  .steps{
+    .carousel{
+      & img{
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
 }
 /* #endregion Mediaqueries */
