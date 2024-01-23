@@ -10,7 +10,7 @@ Deze website gaat over het product "AI design sprint" dat Lifely aanbied. Op de 
 <!-- Voeg een mooie poster visual toe 📸 -->
 **📸 Laptop:**
 
-<img width="1000" alt="The Startup 1200" src="https://github.com/zoepje/the-startup-responsive-interactieve-website/assets/144004461/1b372548-92d2-490c-aff4-c104b7728896">
+<img width="1000" alt="The Startup 1200" src="https://github.com/zoepje/the-startup-responsive-interactieve-website/assets/144004461/7c501067-8973-4c98-8c86-647750d7a4ba">
 
 ***
 
