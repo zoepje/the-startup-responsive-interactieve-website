@@ -420,7 +420,7 @@ iframe{
 
 /* #region Read more */
 .read{
-  padding: 40px 1.5rem;
+  padding: 2.5rem 1.5rem;
   background-color: var(--background-grey);
   width: 100%;
 
@@ -456,7 +456,7 @@ iframe{
 
 /* #region Solutions */
 .solutions{
-  padding: 40px 1.5rem;
+  padding: 2.5rem 1.5rem;
   background-color: var(--accent-red);
   color: var(--white);
   width: 100%;
